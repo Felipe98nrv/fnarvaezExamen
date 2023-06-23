@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fnarvaezExamen.Resumen">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="TextColor" Value="Chocolate"/>
+
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="BackgroundColor" Value="Aquamarine"/>
+
+            </Style>
+            
+        </ResourceDictionary>
+        
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Apellido" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Edad" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Fecha" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Ciudad" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Pais" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Monto Inicial" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Pago Mensual" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Pago Total" Grid.Row="8" Grid.Column="0"/>
+
+                <Entry x:Name="txtNom" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtApellido" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtEdadent" Grid.Row="2" Grid.Column="1"/>
+                <Entry x:Name="txtFecha" Grid.Row="3" Grid.Column="1"/>
+                <Entry x:Name="txtCiudad" Grid.Row="4" Grid.Column="1"/>
+                <Entry x:Name="txtPais" Grid.Row="5" Grid.Column="1"/>
+                <Entry x:Name="txtMonto" Grid.Row="6" Grid.Column="1"/>
+                <Entry x:Name="txtMensual" Grid.Row="7" Grid.Column="1"/>
+                <Entry x:Name="txtTotal" Grid.Row="8" Grid.Column="1"/>
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

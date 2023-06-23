@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fnarvaezExamen.Login" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LOGIN" />
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"  />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" Grid.Row="0" Grid.Column="0" Style="{StaticResource estiloLabel}"/>
+                <Entry x:Name="txtuser" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1" Style="{StaticResource estiloEntry}"/>
+                <Label Text="Contrasena" Grid.Row="1" Grid.Column="0" Style="{StaticResource estiloLabel}"/>
+                <Entry x:Name="txtpassword" Placeholder="Ingrese la contrasena" IsPassword="True" Grid.Row="1" Grid.Column="1" Style="{StaticResource estiloEntry}"/>
+                <Button x:Name="btnIngr" Text="Ingresar" Clicked="btnIngr_Clicked" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0"/>
+
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
