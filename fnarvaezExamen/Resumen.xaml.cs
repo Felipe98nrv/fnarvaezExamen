@@ -21,6 +21,7 @@ namespace fnarvaezExamen
             txtEdadent.Text=txtEdad.ToString();
             txtCiudad.Text=pkCiudad.ToString();
             txtPais.Text=pkPais.ToString();
+
             txtMonto.Text=monto.ToString();
             txtFecha.Text = fecha.ToString();
             txtTotal.Text=pagom.ToString();
